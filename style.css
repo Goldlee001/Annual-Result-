@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #f4f4f4;
+}
+.body{
+    background: #FFFFFF;
+    margin: 70px 150px 0;
+    padding: 50px;
+    /* text-align:center;  */
+}
+.container{
+    border: 2px solid black;
+}
+
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    border-bottom: 1px solid black;
+    border-radius: 8px;
+    text-align:center; 
+}
+.row img{
+    width: 100px;
+}
+.content{
+    width: 98%;
+    margin:10px 10px 0;
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: left;
+}
+tr td{
+    border: 1px solid black;
+}
+.contain{
+    width: 98%;
+    margin:0 10px ;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.pad{
+    text-align: center;
+    padding:0 10px;
+}
+.content-1{
+    width: 98%;
+    margin: 35px 10px 60px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media query for devices with a maximum width of 480px */
+@media (max-width: 480px) {
+    .body {
+        margin: 20px;
+        padding: 20px;
+    }
+    .row img {
+        width: 50px;
+    }
+    /* Add more specific styles as needed for small screens */
+}
+
+/* Media query for devices with a minimum width of 481px and a maximum width of 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+    .body {
+        margin: 40px;
+        padding: 40px;
+        width: 100%;
+    }
+    .container{
+        width: auto;
+    }
+
+    .row img {
+        width: 50px;
+    }
+    /* Add more specific styles as needed for medium-sized screens */
+}
+
+/* Media query for devices with a minimum width of 769px and a maximum width of 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .body {
+        margin: 60px;
+        padding: 60px;
+    }
+    /* Add more specific styles as needed for larger screens */
+}
+
+/* Media query for devices with a minimum width of 1025px */
+@media (min-width: 1025px) {
+    .body {
+        margin: 70px 150px 0;
+        padding: 50px;
+    }
+    /* Restore default styles for larger screens */
+}
